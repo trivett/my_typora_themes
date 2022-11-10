@@ -31,6 +31,7 @@
 
 html {
     font-size: 16px;
+    -webkit-font-smoothing: antialiased;
 }
 
 html,
@@ -76,6 +77,10 @@ div.code-tooltip,
     background: #333;
 }
 
+.native-window #md-notification {
+    border: 1px solid #70717d;
+}
+
 .popover.bottom > .arrow:after {
     border-bottom-color: #333;
 }
@@ -86,7 +91,7 @@ button,
 input,
 select,
 textarea {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
 }
 
 hr {
@@ -320,7 +325,7 @@ code,
 kbd,
 tt,
 var {
-    font-size: 0.875rem;
+    font-size: 0.875em;
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
@@ -616,7 +621,7 @@ h6.md-focus .md-attr,
 
 .md-comment {
     color: #5a95e3;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .md-inline-math svg {
@@ -676,6 +681,7 @@ h6.md-focus .md-attr,
 .context-menu.dropdown-menu .divider,
 .dropdown-menu .divider {
     background-color: #777777;
+    opacity: 1;
 }
 
 footer {
@@ -941,7 +947,10 @@ footer.ty-footer {
     height: 21px;
 }
 
-.ty-preferences .nav-group-item.active {
+.ty-preferences .nav-group-item.active,
+.export-item.active,
+.export-items-list-control,
+.export-detail {
     background: var(--item-hover-bg-color);
 }
 
@@ -982,7 +991,7 @@ footer.ty-footer {
 }
 
 .nav-group-item:active {
-    background-color: #474d54;
+    background-color: #474d54 !important;
 }
 
 .md-search-hit {
@@ -998,13 +1007,16 @@ footer.ty-footer {
     color: white;
 }
 
-.export-detail,
-.export-item.active,
-.export-items-list-control {
-    background: #d6d6d4
-}
-
 .modal-backdrop.in {
     opacity: 1;
     backdrop-filter: blur(1px);
 }
+
+.clear-btn-icon {
+    top: 8px;
+}
+
+/* try fix https://github.com/typora/typora-issues/issues/5253 */
+.file-node-expanded>.file-node-children {
+    display: grid;
+  }
