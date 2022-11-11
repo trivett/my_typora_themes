@@ -52,13 +52,14 @@
 
 html {
     background: linear-gradient(to bottom, #1d242c , #29333e 80%, #1d242c );
-    font-size: 0.925rem;
+    font-size: 1.1rem;
 }
 
 body {
     background: transparent;
-    font-family: "Mono", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1em;
+    /* font-family: "Mono", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
     height: 100%;
     line-height: 1.6;
 }
@@ -66,7 +67,8 @@ body {
 #write {
     color: #fef7f0;
     margin: 0 auto;
-    max-width: 800px;
+    /* max-width: 800px; */
+    max-width: 1300px;
     padding: 30px;
     padding-bottom: 100px;
     position: static;
@@ -98,7 +100,7 @@ body {
 }
 #write ul p{
     color:#FEF7F0;
-    font-size:14px;
+    font-size: 18px;
     font-weight: normal;
 }
 #write ul ul{
@@ -359,40 +361,40 @@ h6 {
     margin: 0.6rem 0;
 }
 
-#write h1::before {
+/* #write h1::before {
     bottom: 1.45rem;
     content: 'H1';
-}
+} */
 
 #write h2 {
     font-size: 1.8rem;
     margin: 0.7rem 0;
 }
 
-#write h2::before {
+/* #write h2::before {
     bottom: 0.2rem;
     content: 'H2';
-}
+} */
 
 #write h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin: 0.5rem 0;
 }
-
+/* 
 #write h3::before {
     bottom: 0.18rem;
     content: 'H3';
-}
+} */
 
 #write h4 {
     font-size: 1rem;
     margin: 0.2rem 0;
 }
-
+/* 
 #write h4::before {
     content: 'H4';
     bottom: 0.15rem;
-}
+} */
 
 #write h5,
 #write h6 {
@@ -404,14 +406,14 @@ h6 {
 #write h6::before {
     bottom: 0.1rem;
 }
-
+/* 
 #write h5::before {
     content: 'H5';
 }
 
 #write h6::before {
     content: 'H6';
-}
+} */
 
 *::-webkit-scrollbar {
     width: 6px;

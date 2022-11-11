@@ -183,9 +183,9 @@ body {
   border-bottom: 5px double var(--text-color1);
 }
 
-#write h1:before {
+/* #write h1:before {
   content: "\00A7  ";
-}
+} */
 
 #write h2 {
   font-size: 2em;
@@ -193,9 +193,9 @@ body {
   border-bottom: 3px double var(--text-color1);
 }
 
-#write h2:before {
+/* #write h2:before {
   content: "\00A7  ";
-}
+} */
 
 #write h3 {
   font-size: 1.75em;
